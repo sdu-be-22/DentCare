@@ -4,10 +4,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-kq0fy&xq-l-#)kp4u=ga9#8-q6sfcw#jgf3gn1b@v&36hax*6z'
 
@@ -27,6 +23,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
+    'blog',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -37,6 +35,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'stom.urls'
@@ -52,10 +52,23 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+        'social_core.backends.facebook.FacebookOAuth2',
+        'social_core.backends.twitter.TwitterOAuth',
+        'social_core.backends.github.GithubOAuth2',
+
+        'django.contrib.auth.backends.ModelBackend',
+
+    )
 
 WSGI_APPLICATION = 'stom.wsgi.application'
 
@@ -111,6 +124,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = 'home'
 
 
 # python -m smtpd -n -c DebuggingServer localhost:587
@@ -123,7 +139,9 @@ EMAIL_HOST_PASSWORD = "Yessengazy2004@"
 
 
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+# Def prmr key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '967911427189105'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '761b7ca5ae9e0ba5bd8ef4d67155bbe0'  # App Secret

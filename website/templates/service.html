@@ -3,85 +3,85 @@
 {% block title %}Our Dental Services{% endblock %}
 {% block meta_description %}Find the current services {% endblock %}
 
-{% block content %}
+{% block content %} 
 
-    <!-- Hero Start -->
+
+<!-- Hero Start -->
     <div class="container-fluid bg-primary py-5 hero-header mb-5">
         <div class="row py-3">
             <div class="col-12 text-center">
-                <h1 class="display-3 text-white animated zoomIn">Services</h1>
-                <a href="" class="h4 text-white">Home</a>
-                <i class="far fa-circle text-white px-2"></i>
-                <a href="" class="h4 text-white">Services</a>
+                <h1 class="display-3 text-white animated zoomIn">When your smile needs anything, <br>DentCare has everything</h1>
             </div>
         </div>
     </div>
     <!-- Hero End -->
+ 
 
+  <!-- ***** Services Area Start ***** -->
+  <section class="dento-services-area mt-50 mb-50">
+    <div class="container">
+      <div class="row">
 
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5 mb-5">
-                <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
-                    <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="{% static 'website/img/before.jpg' %}" style="object-fit: cover;">
-                        <img class="position-absolute w-100 h-100" src="{% static 'website/img/after.jpg' %}" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="section-title mb-5">
-                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                        <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
-                    </div>
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-1.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Cosmetic Dentistry</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-2.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Implants</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-7">
-                    <div class="row g-5">
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-3.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Dental Bridges</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
-                            <div class="rounded-top overflow-hidden">
-                                <img class="img-fluid" src="img/service-4.jpg" alt="">
-                            </div>
-                            <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                <h5 class="m-0">Teeth Whitening</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-service--area text-center mb-50">
+                <h5>Fillings</h5>
+                <p>Most people need at least one tooth filling in their lifetime. Dental filling procedures are most commonly used to treat cavities, but they’re also used to repair cracked or broken teeth, or teeth that have been worn down over time.</p>
+                <a href="{% url 'fillings' %}" class="btn btn-primary btn-outline-primary" >Learn more</a>
             </div>
         </div>
-    </div>
-    <!-- Service End -->
-    
 
-    <!-- Newsletter Start -->
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-service--area text-center mb-50">
+            <h5>Dental Implants</h5>
+            <p>If you’re looking for a long-term solution for missing teeth, dental implants fit, feel and function just like your own. And with proper care, they can last you for years to come. Discover all the possibilities for your new smile — and a new way to take a bigger bite out of life.</p>
+            <a href="" class="btn btn-primary btn-outline-primary" >Learn more</a>
+            </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="single-service--area text-center mb-50">
+            <h5>Treatment of Periodontal Disease</h5>
+            <p>Your gum disease treatment will depend on several factors, including your personal health history and the stage of your gum disease. </p>
+            <a href="" class="btn btn-primary btn-outline-primary" >Learn more</a>
+            </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <h5>Cosmetic Dentistry</h5>
+            <p>With the help of cosmetic dentistry, you can improve your smile and have teeth you're proud of. Aspen Dental practices offer several cosmetic dentistry options, including Invisalign® clear aligners, teeth whitening services and veneers.</p>
+            <a href="" class="btn btn-primary btn-outline-primary" >Learn more</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <h5>Tooth Extraction</h5>
+            <p>Natural teeth are ideal for biting, chewing, and maintaining mouth and jawbone structure, which is why a dentist’s first priority is to help restore, save, and repair your natural teeth. However, sometimes a tooth extraction is unavoidable.</p>
+            <a href="" class="btn btn-primary btn-outline-primary" >Learn more</a>
+          </div>
+        </div>
+
+        <!-- Single Service Area -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-service--area text-center mb-50">
+            <h5>Maxillofacial Surgery</h5>
+            <p>Some dental procedures require a very specific set of dental skills and fall into a branch of dentistry called oral surgery.</p>
+            <a href="" class="btn btn-primary btn-outline-primary" >Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Services Area End ***** -->
+
+
+  <!-- Newsletter Start -->
     <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
         <div class="container">
             <div class="bg-primary p-5">

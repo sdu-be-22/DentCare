@@ -25,7 +25,6 @@ def contact(request):
 	else:
 		return render(request, 'contact.html', {})
 
-
 def about(request):
 	return render(request, 'about.html', {})
 
@@ -62,3 +61,12 @@ def appointment(request):
 
 	else:
 		return render(request, 'home.html', {})
+
+
+def fillings(request):
+	return render(request, 'fillings.html', {})
+
+
+
+def signup(request):
+	return render(request, 'signup.html', {})
