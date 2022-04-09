@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
+from django.shortcuts import  render
+from django.core.files.storage import FileSystemStorage
 
 def home(request):
 	return render(request, 'home.html', {})
@@ -17,7 +19,7 @@ def contact(request):
 			message_name, # subject
 			message, # message
 			message_email, # from
-			['esengazypakiza@gmail.com'], # to
+			['kimgrishulya@gmail.com'], # to
 			)
 
 		return render(request, 'contact.html', {'message_name': message_name})
@@ -70,3 +72,35 @@ def fillings(request):
 
 def signup(request):
 	return render(request, 'signup.html', {})
+
+def forms(request):
+	if request.method == "POST":
+		message_name = request.POST['message-name']
+		message_email = request.POST['message-email']
+		message_tel = request.POST['message-tel']
+
+
+		# send an email
+		send_mail(
+			message_name, # subject
+			message_tel, # message
+			message_email, # from
+			['kimgrishulya@gmail.com'], # to
+			)
+
+		return render(request, 'forms.html', {'message_name': message_name})
+
+	else:
+		return render(request, 'forms.html', {})
+
+def upload(request):
+    if request.method == 'POST' and request.FILES['upload']:
+        upload = request.FILES['upload']
+        fss = FileSystemStorage()
+        file = fss.save(upload.name, upload)
+        file_url = fss.url(file)
+        return render(request, 'upload.html', {'file_url': file_url})
+    return render(request, 'upload.html')
+
+ def shop(request):
+	return render(request, 'shop.html', {})

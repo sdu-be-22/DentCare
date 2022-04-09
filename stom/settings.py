@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-    'blog',
     'members',
 ]
 
@@ -139,9 +138,11 @@ EMAIL_HOST_PASSWORD = "Yessengazy2004@"
 
 
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Def prmr key field type
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-SOCIAL_AUTH_FACEBOOK_KEY = '967911427189105'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '761b7ca5ae9e0ba5bd8ef4d67155bbe0'  # App Secret

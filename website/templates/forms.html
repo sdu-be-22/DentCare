@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Fill the Form{% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn">Step 1</h1>
+                <a href="" class="h4 text-white">Now let's get to know you a little bit better!</a>
+                <i class="far fa-circle text-white px-2"></i>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Forms Start -->
+        {% if message_name %}
+        <center>
+            <h2>Thanks {{ message_name }}!</h2>
+            <p>We received your email</p>
+        </center>
+    <br/><br/><br/>
+    {% else %} 
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="bg-light rounded h-100 p-5">
+                        <div class="section-title">
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Personal Data</h5>
+                            <h1 class="display-6 mb-4">Provide us your personal information, so we can contact with you later</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="contact-form">
+                        <div class="section-heading">
+                            <h2>Let's Get Started</h2>
+                            <div class="line"></div>
+                        </div>
+
+                        <form action="{% url 'contact' %}" method="post">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <input type="text" name="message-name" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" name="message-email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message-tel" class="form-control border-0 bg-light px-4" placeholder="Phone Number"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <a href="upload" class="next">Next &raquo;</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+     {% endif %}
+
+{% endblock %}
