@@ -27,7 +27,6 @@ def logout_user(request):
 	return redirect('home')
 
 def login_user(request):
-	login(request)
 	messages.success(request, ("You Were Logged In!"))
 	return redirect('home')
 
