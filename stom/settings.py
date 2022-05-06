@@ -24,6 +24,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'members',
+    'newsletters',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -113,6 +115,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
@@ -134,7 +137,7 @@ EMAIL_HOST_USER = "kimgrishulya@gmail.com"
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = "Yessengazy2004@"
+EMAIL_HOST_PASSWORD = "Stomweb2022"
 
 
 

@@ -68,8 +68,6 @@ def appointment(request):
 def fillings(request):
 	return render(request, 'fillings.html', {})
 
-
-
 def signup(request):
 	return render(request, 'signup.html', {})
 
@@ -102,5 +100,5 @@ def upload(request):
         return render(request, 'upload.html', {'file_url': file_url})
     return render(request, 'upload.html')
 
- def shop(request):
+def shop(request):
 	return render(request, 'shop.html', {})

@@ -26,11 +26,6 @@ def logout_user(request):
 	messages.success(request, ("You Were Logged Out!"))
 	return redirect('home')
 
-def login_user(request):
-	login(request)
-	messages.success(request, ("You Were Logged In!"))
-	return redirect('home')
-
 def register_user(request):
 	if request.method == "POST":
 		form = RegisterUserForm(request.POST)
