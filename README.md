@@ -9,7 +9,7 @@ A website with fully-working appointment system for a dental clinic on Django, p
 
 • <a href="https://github.com/Abikeyev/" target="_blank">Alan Abikeyev</a>
 
-• <a href="https://github.com/aiarykanatbek/" target="_blank">Aiaru Kanatbekkyzy</a>
+• <a href="https://github.com/aiarukanatbek/" target="_blank">Aiaru Kanatbekkyzy</a>
 
 • <a href="https://github.com/boakwoon/" target="_blank">Pakiza Yessengazy</a>
 
