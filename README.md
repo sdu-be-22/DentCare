@@ -7,11 +7,11 @@ A website with fully-working appointment system for a dental clinic on Django, p
 
 # Team members 
 
-• <a href="https://https://github.com/Abikeyev/" target="_blank">Alan Abikeyev</a>
+• <a href="https://github.com/Abikeyev/" target="_blank">Alan Abikeyev</a>
 
 • Aiaru Kanatbekkyzy
 
-• <a href="https://https://github.com/boakwoon/" target="_blank">Pakiza Yessengazy</a>
+• <a href="https://github.com/boakwoon/" target="_blank">Pakiza Yessengazy</a>
 
 # Languages and Tools 
 
