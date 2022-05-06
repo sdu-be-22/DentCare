@@ -1,6 +1,17 @@
 # DentCare
-                       A website with fully-working appointment system for a dental clinic on Django, powered by Bootstrap.
+A website with fully-working appointment system for a dental clinic on Django, powered by Bootstrap.
 
+# Instructor
+
+• <a href="https://www.google.com/" target="_blank">Bissenbay Dauletbayev</a>
+
+# Team members 
+
+• <a href="https://https://github.com/Abikeyev/" target="_blank">Alan Abikeyev</a>
+
+• Aiaru Kanatbekkyzy
+
+• <a href="https://https://github.com/boakwoon/" target="_blank">Pakiza Yessengazy</a>
 
 # Languages and Tools 
 
