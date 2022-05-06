@@ -44,7 +44,7 @@ User's account. Login, Logout and Register system
 
 # Presentation
 
-<a href="https://https://www.canva.com/design/DAE_6-VX82U/lxn13OqY9tTpcZs4y_5YTg/view?utm_content=DAE_6-VX82U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton/" target="_blank">Link to the Presentation</a>
+<a href="https://www.canva.com/design/DAE_6-VX82U/lxn13OqY9tTpcZs4y_5YTg/view?utm_content=DAE_6-VX82U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Link to the Presentation</a>
 
 
 
