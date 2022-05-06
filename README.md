@@ -3,7 +3,7 @@ A website with fully-working appointment system for a dental clinic on Django, p
 
 # Instructor
 
-• <a href="https://www.google.com/" target="_blank">Bissenbay Dauletbayev</a>
+• <a href="https://github.com/bissenbay" target="_blank">Bissenbay Dauletbayev</a>
 
 # Team members 
 
