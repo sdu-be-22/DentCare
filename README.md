@@ -27,6 +27,16 @@ A website with fully-working appointment system for a dental clinic on Django, p
 </div>
 
 
+# Project Structure
+• Registration | Login | Logout
+
+• Search Schedule
+
+• Make an appointment
+
+• Newsletter
+
+• Get in Touch
 
 # Website
 
